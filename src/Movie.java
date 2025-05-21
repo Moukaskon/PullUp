@@ -1,13 +1,13 @@
 public class Movie extends MediaItem {
-    private String title;
     private String director;
 
     public Movie(String title, String director) {
-        this.title = title;
+        super(title);
         this.director = director;
     }
 
     public void printInfo() {
-        System.out.println("Movie: " + title + " directed by " + director);
+        printTitle();
+        System.out.println("Director: " + director);
     }
 }
